@@ -13,7 +13,7 @@ public class EleviReader extends IReader{
     }
 
     @Override
-    public List<Aplicant> readAplicanti() throws FileNotFoundException {
+    public List<Aplicant> readAplicanti(String s) throws FileNotFoundException {
         scanner.useDelimiter(",|\n");
         List<Aplicant> elevi = new ArrayList<Aplicant>();
 

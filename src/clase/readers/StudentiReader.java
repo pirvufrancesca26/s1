@@ -13,7 +13,7 @@ public class StudentiReader extends IReader{
     }
 
     @Override
-    public List<Aplicant> readAplicanti() throws FileNotFoundException {
+    public List<Aplicant> readAplicanti(String s) throws FileNotFoundException {
         super.scanner.useDelimiter(",|\n");
         List<Aplicant> studenti = new ArrayList<Aplicant>();
 
