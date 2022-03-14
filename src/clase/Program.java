@@ -10,10 +10,10 @@ public class Program {
 
 	public static void main(String[] args) {
 		List<Aplicant> listaAngajati;
-		IReader reader = new AngajatiReader();
-		try {
 
-			listaAngajati = reader.readAplicanti("angajati.txt");
+		try {
+			IReader reader = new AngajatiReader("s2/angajati.txt");
+			listaAngajati = reader.readAplicanti();
 			Aplicant.setPrag(90);
 			for (Aplicant angajat : listaAngajati) {
 				System.out.println(angajat.toString());
