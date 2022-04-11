@@ -1,9 +1,8 @@
-package clase;
+package ase.cts.clase;
 
 public class Angajat extends Aplicant {
     private String ocupatie;
     private int salariu;
-
 
     public void setOcupatie(String ocupatie) {
         this.ocupatie = ocupatie;
@@ -15,13 +14,11 @@ public class Angajat extends Aplicant {
 
     public Angajat() {
         super();
-
     }
 
     @Override
     public String toString() {
         return "Angajat: " + super.toString() + "Ocupatie=" + ocupatie + ", salariu=" + salariu;
     }
-
 
 }

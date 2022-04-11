@@ -1,10 +1,10 @@
-package clase;
+package ase.cts.clase;
+
+import ase.cts.clase.readers.AngajatiReader;
+import ase.cts.clase.readers.IReader;
 
 import java.io.FileNotFoundException;
 import java.util.List;
-
-import clase.readers.AngajatiReader;
-import clase.readers.IReader;
 
 public class Program {
 
@@ -12,14 +12,15 @@ public class Program {
 		List<Aplicant> listaAngajati;
 
 		try {
-			IReader reader = new AngajatiReader("s2/angajati.txt");
+			IReader reader = new AngajatiReader("angajati.txt");
 			listaAngajati = reader.readAplicanti();
-			Aplicant.setPrag(90);
+			Aplicant.setPragPunctaj(90);
 			for (Aplicant angajat : listaAngajati) {
 				System.out.println(angajat.toString());
 				angajat.afisareRezultat();
 				angajat.afisareSumaBani(2000);
 			}
+
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

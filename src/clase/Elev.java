@@ -1,4 +1,4 @@
-package clase;
+package ase.cts.clase;
 
 public class Elev extends Aplicant{
 	private int clasa;
@@ -14,7 +14,7 @@ public class Elev extends Aplicant{
 
 	@Override
 	public String toString() {
-		return "Elev: " + super.toString() + ", Clasa=" + clasa + ", Tutore=" + tutore;
+		return "Elev: " + super.toString() + "Clasa=" + clasa + ", Tutore=" + tutore;
 	}
 
 	public Elev() {
